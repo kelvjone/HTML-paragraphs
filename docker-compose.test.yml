@@ -5,7 +5,7 @@ services:
     build: .
 
   sut:
-    build: test
+    build: Dockerfile
     links:
       - html-paragraphs
     volumes:

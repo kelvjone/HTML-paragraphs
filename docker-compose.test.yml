@@ -1,12 +1,12 @@
 version: '2'
 
 services:
-  HTML-paragraphs:
+  html-paragraphs:
     build: .
 
   sut:
     build: test
     links:
-      - HTML-paragraphs
+      - html-paragraphs
     volumes:
       - ./test/results:/results

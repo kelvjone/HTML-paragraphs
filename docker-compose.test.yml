@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  HTML-paragraphs:
+    build: .
+
+  sut:
+    build: test
+    links:
+      - HTML-paragraphs
+    volumes:
+      - ./test/results:/results

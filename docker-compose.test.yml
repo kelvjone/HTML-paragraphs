@@ -5,6 +5,7 @@ services:
     build: .
 
   sut:
+    context: .
     build: Dockerfile
     links:
       - html-paragraphs
